@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<link rel="stylesheet" href="products.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<title>Mr.Intelligence Inc.</title>
+</head>
+<body style="background-color:black; color:white;">   
+<!--Navbar-->
+<header class="header">
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="image/appstore.png" alt="Logo"/>
+            <h4 id="nav-logo">Mr.Intelligence Inc.</h4>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" id="nav_element">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html"id="nav_element">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html" id="nav_element">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="clients.html" id="nav_element">Our Clients</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="demo.html" id="nav_element">Request Demo</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="join_us.html" id="nav_element">Join Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact-us" id="nav_element">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" id="nav_element">Blogs</a>
+              </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+        <!--Hamburger menu script-->
+        <script>
+
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+
+            hamburger.addEventListener("click", mobileMenu);
+
+            function mobileMenu() {
+               hamburger.classList.toggle("active");
+               navMenu.classList.toggle("active");
+            }
+            const navLink = document.querySelectorAll(".nav-link");
+
+            navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+            function closeMenu() {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }
+
+        </script>
+
+ <!--Products-->
+ <div id="products">
+    <section class="col-lg-7 col-md-4 col-sm-1" id="mred">
+ <div class="box reveal">
+    <h4 class="title "><a href="" id="product_title">Mr. Ed</a></h4>
+    <p class="description " id="description1">Learning Management System</p>
+    <p class="description " id="description2">Pro level management system for every student and educational institution.</p>
+</div>
+    </section>
+
+    <section class="col-lg-7 col-md-4 col-sm-1" id="mrone">
+<div class="box reveal">
+    <h4 class="title"><a href="" id="product_title">Mr. One</a></h4>
+    <p class="description " id="description1">All in One Management System <span class="badge">New</span> </p>
+    <p class="description" id="description2"> The one and only thing you would need. The perfect combo of ERP,CRM,HRM and Finance.</p>
+</div>
+    </section>
+
+    <section class="col-lg-7 col-md-4 col-sm-1" id="mrconnect">
+<div class="box reveal">
+    <h4 class="title "><a href="" id="product_title">Mr. Connect</a></h4>
+    <p class="description " id="description1">Customer Relationship Management</p>
+    <p class="description " id="description2">Make your business growth consistent by managing your customer with our Mr. Connect.</p>
+</div>
+    </section>
+
+    <section class="col-lg-7 col-md-4 col-sm-1" id="mrplan">
+<div class="box reveal">
+    <h4 class="title "><a href="" id="product_title">Mr. Plan</a></h4>
+    <p class="description " id="description1">Enterprise Resource Planning</p>
+    <p class="description " id="description2">Plan every resources of your enterprise with our more friendly Mr. Plan. </p>
+</div>
+    </section>
+
+    <section class="col-lg-7 col-md-4 col-sm-1" id="mrmanpower">
+<div class="box reveal">
+    <h4 class="title "><a href="" id="product_title">Mr. Manpower</a></h4>
+    <p class="description " id="description1">Human Resource Management</p>
+    <p class="description " id="description2">Stuck with planning the human resource, use our Mr. Manpower </p>
+</div>
+</section>
+</div>
+</body>
+</html>
+
+<script>
+    window.addEventListener('scroll', reveal);
+    
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+  
+      for(var i = 0; i < reveals.length; i++){
+  
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 5;
+  
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  
+    </script>

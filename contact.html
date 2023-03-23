@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="contact.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        <title>Mr.Intelligence Inc.</title>
+    </head>
+
+    <body style=" background-color:black; color:white;">
+<!--NavBar-->
+<header class="header">
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="image/appstore.png" alt="Logo"/>
+            <h4 id="nav-logo">Mr.Intelligence Inc.</h4>
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" id="nav_element">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html"id="nav_element">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html" id="nav_element">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="clients.html" id="nav_element">Our Clients</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="demo.html" id="nav_element">Request Demo</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="join_us.html" id="nav_element">Join Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html" id="nav_element">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" id="nav_element">Blogs</a>
+              </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+  </header>
+        <!--Hamburger menu script-->
+        <script>
+  
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+  
+            hamburger.addEventListener("click", mobileMenu);
+  
+            function mobileMenu() {
+               hamburger.classList.toggle("active");
+               navMenu.classList.toggle("active");
+            }
+            const navLink = document.querySelectorAll(".nav-link");
+  
+            navLink.forEach(n => n.addEventListener("click", closeMenu));
+  
+            function closeMenu() {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }
+  
+        </script>
+<!-- Contact Us-->        
+<section id="contact-us">
+    <div class="container">
+
+        <div class="section-header">
+            <h3>Contact Us</h3>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="map mb-4 mb-lg-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.6264456418926!2d77.0278288146906!3d11.1411738920746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859b0a55f47a7%3A0xf444b00cf0ef7b09!2sMr.%20Intelligence%20Inc!5e0!3m2!1sen!2sin!4v1678338804499!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 600px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-9 info"> 
+                        <span class="material-symbols-outlined" style="font-size: 32px; float: left; padding:15px;">location_on</span>                                     
+                        <p style="padding:15px;">6/2, Nathamedu, Ramasamy nagar, Kovilplayam, Coimbatore - 641107.</p>
+                    </div>
+                    <div class="col-md-9 info">
+                        <span class="material-symbols-outlined" style="font-size: 32px; float: left; padding:15px;">mail</span>
+                        <p style="padding:15px;">sales@mrintelligenceinc.com</p>
+                    </div>
+                    <div class="col-md-9 info">
+                        <span class="material-symbols-outlined" style="font-size: 32px; float: left; padding:15px;">smartphone</span>
+                        <p style="padding:15px;">+91 99947 55174</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!--Enquiry form-->
+                <div class="form">
+                    <p>For Queries</p>
+                    <form action="https://www.mrintelligenceinc.com" method="post" role="form" class="contactForm">
+                        <input type="hidden" name="_token" value="uWGoQhJiqVi3cAibtIu6aUsGdTccML5X26n0KcSL">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" style="border-radius:25px; border:none;">
+                                <div class="validation"></div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" style="border-radius:25px; border:none;">
+                                <div class="validation"></div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" style="border-radius:25px; border:none;">
+                            <div class="validation"></div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" style="border-radius:25px; border:none;"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <br>
+                        <div class="text-center"><input type="submit" title="Send Message" name="submit" id="submit" value="Send Message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
