@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
 }
 
+body{
+  background:linear-gradient( rgba(0,0,0, 0.25),   rgba(0,0,0, 0.25) ),    url(image/demo.png);
+}
 /* Navbar */
 .header{
     position:sticky;
@@ -69,6 +72,15 @@
 #contact-us{
     display:flex;
     padding:50px 150px;
+}
+.form{
+  color:white;
+  padding:5% 5%;
+   background: rgba(255, 255, 255, 0.27);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(7px);
+   -webkit-backdrop-filter: blur(8px);
 }
 .section-header> h3{
     font-size: 40px;

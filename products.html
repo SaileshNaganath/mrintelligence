@@ -77,8 +77,9 @@
 
  <!--Products-->
  <div id="products">
+    <p class ="scroll-text ">Scroll down to see all the products</p>
     <section class="col-lg-7 col-md-4 col-sm-1" id="mred">
- <div class="box reveal">
+ <div class="box reveal active">
     <h4 class="title "><a href="" id="product_title">Mr. Ed</a></h4>
     <p class="description " id="description1">Learning Management System</p>
     <p class="description " id="description2">Pro level management system for every student and educational institution.</p>
@@ -130,7 +131,7 @@
   
         var windowheight = window.innerHeight;
         var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 5;
+        var revealpoint = 1;
   
         if(revealtop < windowheight - revealpoint){
           reveals[i].classList.add('active');
