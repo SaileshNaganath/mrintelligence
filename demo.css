@@ -69,6 +69,12 @@ body{
 }
 
 /*Form*/
+.demo-header{
+    padding:10% 10% 0% 10%;
+    color:white;
+    font-size: x-large;
+    text-align: center;
+}
 .enquiry-form{
     padding:15% 5%;
 }

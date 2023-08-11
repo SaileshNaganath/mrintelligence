@@ -73,6 +73,13 @@ body{
     display:flex;
     padding:50px 150px;
 }
+.contact-content{
+  text-align: justify;
+  font-size: larger;
+}
+.form-content{
+  padding-bottom: 24px;
+}
 .form{
   color:white;
   padding:5% 5%;
@@ -146,6 +153,7 @@ body{
 #contact-us{
     padding:10px 5px;
 }
+
 .section-header> h3{
     font-size: 25px;
 }
